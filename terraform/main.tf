@@ -6,7 +6,7 @@ resource "docker_image" "app_image" {
 resource "docker_service" "app_service" {
   name = "my-web-app"
   task_spec {
-    container_spec { image = docker_image.app_image.id }
+    container_spec { image = docker_image.app_image.name }
   }
   endpoint_spec {
     ports {
