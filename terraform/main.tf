@@ -1,5 +1,5 @@
 resource "docker_image" "app_image" {
-  name = "ghcr.io/userliv/devspro:latest"
+  name = "ghcr.io/userliv/devopspro:latest"
   keep_locally = true
 }
 
