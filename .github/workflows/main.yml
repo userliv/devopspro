@@ -34,7 +34,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: ghcr.io/jude1129/my-devops-project:latest
+        tags: ghcr.io/userliv/Devops:latest
 
   deploy:
     name: Deploy to Local Docker Swarm
@@ -43,6 +43,6 @@ jobs:
     steps:
     - name: Deploy with Terraform
       run: |
-        cd C:\Users\Jacinthhpy\MyDevOpsProject\terraform
+        cd C:\Devops\terraform
         terraform init
         terraform apply --auto-approve
